@@ -1,0 +1,26 @@
+FROM python:3.9-alpine3.13
+
+RUN apk add --no-cache --virtual=.build-deps \
+    gcc \
+    make \
+    python3-dev \
+    musl-dev \
+    libffi-dev \
+    mariadb-dev \
+    postgresql-dev \
+    g++ \
+    libgcc \
+    libstdc++ \
+    libxml2-dev \
+    libxslt-dev \
+    jpeg-dev
+
+RUN mkdir -p app/
+WORKDIR /app
+
+COPY ./requirements.txt /app/requirements.txt
+RUN pip install -r requirements.txt
+
+COPY ./ /app
+
+CMD python manage.py runserver 0.0.0.0:8080

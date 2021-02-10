@@ -1,0 +1,5 @@
+.env
+.env.dev
+
+db.sqlite3
+*.pyc

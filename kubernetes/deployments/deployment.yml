@@ -1,0 +1,43 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8sportfolio
+  labels:
+    app: portfolio
+spec:
+  selector:
+    matchLabels:
+      app: portfolio
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: portfolio
+    spec:
+      containers:
+        - name: app
+          image: benjaminlouk011/k8sportfolio_app:v1.0.2
+          envFrom:
+            - secretRef:
+                name: prod-secrets
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8000
+        - name: proxy
+          image: benjaminlouk011/k8sportfolio_proxy:v1.0.2
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              memory: 64Mi
+              cpu: 50m
+            limits:
+              memory: 256Mi
+              cpu: 500m
