@@ -23,7 +23,7 @@ kubectl create secret generic prod-secrets --from-env-file=.env
 ### 3. Apply development.yml
 
 ```bash
-kubectl apply -f kubernetes/developments/development.yml
+kubectl apply -f kubernetes/deployments/deployment.yml
 ```
 
 ### 4. Apply service.yml
