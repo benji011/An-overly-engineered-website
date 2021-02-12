@@ -5,7 +5,7 @@ An overly engineered website that uses Django with K8s to be deployed on Digital
 ※ WIP planned infrastructure
 
 # Preview
-https://benji011.github.io/k8s-django-nginx-uWSGI-POC/
+https://benji011.github.io/k8s-django-nginx-uWSGI-preview/
 
 # Usage
 
