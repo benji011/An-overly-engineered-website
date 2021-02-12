@@ -4,6 +4,9 @@ An overly engineered website that uses Django with K8s to be deployed on Digital
 <img src="https://github.com/benji011/An-overly-engineered-website/blob/main/app/static/img/infra.png" alt="My tiny infrastructure">
 ※ WIP planned infrastructure
 
+# Preview
+https://benji011.github.io/k8s-django-nginx-uWSGI-POC/
+
 # Usage
 
 ### 1. Create .env file from template
