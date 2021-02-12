@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: benjaminlouk011/k8sportfolio_app:v1.0.2
+          image: benjaminlouk011/k8sportfolio_app:v1.0.3
           envFrom:
             - secretRef:
                 name: prod-secrets
