@@ -1,4 +1,4 @@
-# An overly engineered website
+# Kubernetes + Django + Nginx + uWSGI
 An overly engineered website that uses Django with K8s to be deployed on DigitalOcean. Later the cluster will be provision my IaC using Terraform. But this is still a WIP.
 
 <img src="https://github.com/benji011/An-overly-engineered-website/blob/main/app/static/img/infra.png" alt="My tiny infrastructure">
