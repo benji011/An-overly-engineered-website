@@ -5,12 +5,17 @@
     <div class="columns">
       <div class="column is-three-fifths">
         <h1 class="title">
-          An overly engineered website
+          About
         </h1>
         <div class="content">
+          <p class="location-parent">
+            <i class="fas fa-link"></i>
+            <span>Repository - <a href="https://github.com/benji011/k8s-django-nginx-uWSGI" target="_blank">benji011/k8s-django-nginx-uWSGI</a></span>
+          </p>
           <p class="is-size-6">
-            Built using <a href="https://docs.djangoproject.com/" target="_blank">Django 3.1</a> as its backend service combined with <a href="https://www.nginx.com/" target="_blank">Nginx</a> & <a href="https://uwsgi-docs.readthedocs.io/en/latest/" target="_blank">uWSGI</a>. 
-            It is then Dockerized as 2 separate containers housed under a single pod (but is load balanced between 2 replicas) and deployed onto <a href="https://digitalocean.com" target="_blank">DigitalOcean</a> as a Kubernetes cluster.
+            I designed this website using Django (+ uWSGI & Nginx) as its backend behind a Kubernetes cluster on DigitalOcean, provisioned with Terraform. 
+            My goal was to showcase my ability to handle infrastructure as code (IaC) and how it's designed to scale horizontally on demand. 
+            But because such a small web app didn't fit the demand for high scalability I opted to deploy the client facing side into GitHub pages instead.
           </p>
           <p class="buttons">
             <button class="button" onclick="window.open('https://www.linkedin.com/in/benjamin-lo-6b0ba11a/');">
