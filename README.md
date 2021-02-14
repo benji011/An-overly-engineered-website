@@ -1,8 +1,7 @@
 # Kubernetes + Django + Nginx + uWSGI
-An overly engineered website that uses Django with K8s to be deployed on DigitalOcean. Later the cluster will be provision my IaC using Terraform. But this is still a WIP.
+An overly engineered website to demonstrate a basic usage of a Django app deployed on DigitalOceans Kubernetes cluster, which was provisioned by Terraform as IaC. You can read more on my (again, very basic) Terraform [design here](https://github.com/benji011/digitalocean-terraform-k8s-cluster).
 
 <img src="https://github.com/benji011/An-overly-engineered-website/blob/main/app/static/img/infra.png" alt="My tiny infrastructure">
-※ WIP planned infrastructure
 
 # Preview
 https://benji011.github.io/k8s-django-nginx-uWSGI-preview/
